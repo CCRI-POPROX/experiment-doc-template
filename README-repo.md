@@ -1,5 +1,5 @@
 # Experiment Documentation 
-## Experiment ID: @InsertExpIDHere@ /  Exerimenter ID: @InsertUserIDHere@
+## Experiment ID: @InsertExpIDHere@ /  Experimenter ID: @InsertUserIDHere@
 
 ## Purpose
 This repository will be the primary means of technical communication between your team and POPROX staff throughout the course of developing, executing, and evaluating your POPROX experiment.
