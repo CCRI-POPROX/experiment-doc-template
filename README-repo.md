@@ -1,5 +1,5 @@
 # Experiment Documentation 
-## Experiment ID: @InsertExpIDHere@ /  Experimenter ID: @InsertUserIDHere@
+## Experiment ID: @InsertExpIDHere@
 
 ## Purpose
 This repository will be the primary means of technical communication between your team and POPROX staff throughout the course of developing, executing, and evaluating your POPROX experiment.
@@ -11,7 +11,4 @@ This repository will be the primary means of technical communication between you
 	* Approval: This is a placeholder for the approval letter(s) from your local IRB(s). 
 * Experiment design. This document specifies the phases of your planned study, the different experimental treatments you will apply, and the groups of users that you are studying. 
 * Technical design. 
-
-
-
 
