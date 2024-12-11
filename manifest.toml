@@ -1,0 +1,69 @@
+[experiment]
+id = "06b5f23a-d154-4c00-8802-bee86767a226"
+description = "Experiment Gamma: comparing diversifiers to prove out the experimentation framework"
+start_date = "2024-09-30"
+duration = "3 days"
+
+[owner]
+team_id = "dc9ae223-33af-47fa-ab3e-84823287fe72"
+team_name = "POPROX testing"
+members = ["8d022e4f-382a-4cd4-a9c9-14ce7ed8e1c0"]
+
+[users.groups.a]
+minimum_size = 5
+
+[users.groups.b]
+identical_to = "a"
+
+[users.groups.c]
+identical_to = "b"
+
+
+[recommenders.softmax]
+endpoint = "https://n07svs3qeh.execute-api.us-east-1.amazonaws.com/?pipeline=softmax"
+
+[recommenders.mmr]
+endpoint = "https://n07svs3qeh.execute-api.us-east-1.amazonaws.com/?pipeline=mmr"
+
+[recommenders.calibration]
+endpoint = "https://n07svs3qeh.execute-api.us-east-1.amazonaws.com/?pipeline=topic-cali"
+
+
+[phases]
+sequence = ["1", "2", "3"]
+
+[phases.1]
+duration = "1 day"
+
+[phases.1.assignments.a]
+recommender = "softmax"
+
+[phases.1.assignments.b]
+recommender = "mmr"
+
+[phases.1.assignments.c]
+recommender = "calibration"
+
+[phases.2]
+duration = "1 day"
+
+[phases.2.assignments.a]
+recommender = "calibration"
+
+[phases.2.assignments.b]
+recommender = "softmax"
+
+[phases.2.assignments.c]
+recommender = "mmr"
+
+[phases.3]
+duration = "1 day"
+
+[phases.3.assignments.a]
+recommender = "mmr"
+
+[phases.3.assignments.b]
+recommender = "calibration"
+
+[phases.3.assignments.c]
+recommender = "softmax"
